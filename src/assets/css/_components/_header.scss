@@ -2,29 +2,73 @@ header {
    text-transform: uppercase;
    width: 100%;
    height: 100px;
-   background-color: $bg_blue;
+   background-color: $bg-blue;
    display: flex;
    align-items: center;
 
    .row {
       align-items: center;
+      justify-content: space-between;
+      text-align: right;
    }
 
-   a {
-      h6 {
-         @extend %p_white;
-         margin-top: 10px;
-         text-align: right;
+   .right {
+      display: flex;
+      align-items: center;
+
+
+
+      .Tel {
+         margin-right: 10px;
       }
 
-      text-decoration: none
-   }
+      a {
+         h6:hover {
+            color: #d8dadb;
+         }
 
-   img {
-      height: 50px;
-   }
+         h6 {
+            margin-top: 10px;
 
-   .btn {
-      text-transform: uppercase;
+            transition: all .2s linear;
+         }
+
+         margin-top: 2px;
+         font-size: 17px;
+         font-family: 'Poppins';
+         color: white;
+         font-weight: 500;
+         text-decoration: none;
+      }
+
+      .nav-link:hover,
+      .nav-link:focus {
+         color: #d8dadb;
+      }
+
+      ul {
+         border-radius: 3px;
+
+         li {
+            a:hover {
+               background-color: #c0e9fc;
+            }
+
+            a {
+               color: #575858;
+               font-size: 17px;
+               font-family: 'Poppins';
+               font-weight: 600;
+            }
+         }
+      }
+
+      img {
+         height: 50px;
+      }
+
+      .btn {
+         text-transform: uppercase;
+      }
    }
 }

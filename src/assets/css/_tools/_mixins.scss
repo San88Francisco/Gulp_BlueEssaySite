@@ -1,9 +1,25 @@
-$bg_blue: #03a9f4;
+.color {
+   color: #d8dadb;
+   color: #0287c3;
+   color: #03a9f4;
+   color: #c0e9fc;
+   color: #e6f7fe;
+   color: #f75e2e;
+   color: #fa9e82;
+   color: #f6f9f9;
+   color: #656a70;
+
+   // color: #;
+}
+
+
+$bg-blue: #03a9f4;
+$bg-LOWblue: #c0e9fc;
 
 %p {
    font-size: 14px;
    font-family: 'Poppins';
-   color: rgb(81, 85, 90);
+   color: #656a70;
 }
 
 %p_white {
@@ -22,48 +38,47 @@ $bg_blue: #03a9f4;
 %h1 {
    font-size: 35px;
    font-family: 'Poppins';
-   color: black;
+   color: white;
    font-weight: bold;
 }
 
 %h2 {
    font-size: 33px;
    font-family: 'Poppins';
-   color: black;
-   font-weight: 500;
+   color: white;
+   font-weight: 800;
 }
 
 %h3 {
    font-size: 27px;
-   font-family: 'Inclusive Sans';
-   color: black;
-   font-weight: 500;
+   font-family: 'Poppins';
+   color: white;
+   font-weight: 700;
 }
 
 %h4 {
    font-size: 22px;
-   font-family: 'Inclusive Sans';
-   color: black;
-   font-weight: 500;
+   font-family: 'Poppins';
+   color: white;
+   font-weight: 600;
 }
 
 %h5 {
    font-size: 17px;
-   font-family: 'Inclusive Sans';
-   color: black;
+   font-family: 'Poppins';
+   color: white;
    font-weight: 500;
-
 }
 
 %h6 {
    font-size: 14px;
-   font-family: 'Inclusive Sans';
-   color: black;
-   font-weight: 500;
+   font-family: 'Poppins';
+   color: white;
+   font-weight: 400;
 }
 
 
-
+// BUTTON BLUE
 .but_blue:hover {
    background-color: #c0e9fc;
 }
@@ -77,19 +92,22 @@ $bg_blue: #03a9f4;
    transition: all .3s ease-in-out;
 }
 
-.but_blue:hover {
+.but_blue-big:hover {
    background-color: #c0e9fc;
 }
 
-.but_blue {
+.but_blue-big {
    border-radius: 8px;
    background-color: #0287c3;
-   width: 120px;
+   width: 170px;
    border: 0;
 
    transition: all .3s ease-in-out;
 }
 
+
+
+// BUTTON ORANGE
 .but_orange:hover {
    background-color: #fa9e82;
 }
@@ -112,7 +130,7 @@ $bg_blue: #03a9f4;
    background-color: #f75e2e;
    width: 170px;
    border: 0;
-   
+
    transition: all .3s ease-in-out;
 }
 
