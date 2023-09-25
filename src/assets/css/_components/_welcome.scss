@@ -1,0 +1,46 @@
+.welcome {
+   .container {
+      padding: 0 70px;
+
+      .left {
+         background-color: #c0e9fc;
+         padding-top: 50px;
+
+         h2 {
+            @extend %h1;
+            position: relative;
+            top: 75px;
+            color: #0287c3;
+         }
+
+         img {
+            width: 400px;
+            height: 400px;
+         }
+
+      }
+
+      .right {
+         display: flex;
+         text-align: left;
+         margin-left: 30px;
+         flex-direction: column;
+         justify-content: space-between;
+
+         h4 {
+            @extend %h4;
+            color: #03a9f4;
+         }
+
+         h1 {
+            @extend %h1;
+            color: black;
+         }
+
+         p {
+            @extend %p;
+         }
+
+      }
+   }
+}

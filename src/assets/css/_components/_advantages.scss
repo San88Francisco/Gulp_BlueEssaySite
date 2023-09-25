@@ -1,0 +1,128 @@
+.advantages {
+   width: 100%;
+   height: 700px;
+   background-color: $bg-blue;
+   margin-top: 80px;
+
+   .box2 {
+      top: 1920px;
+   }
+
+   .bg_image {
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      z-index: 1;
+      overflow: hidden;
+
+      img {
+         width: 80px;
+         margin: 20px 0;
+      }
+   }
+
+   .bg_image :nth-child(1n) {
+      position: relative;
+      top: 100px;
+
+      animation-name: advantages-cl1;
+      animation-duration: 6s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+   }
+
+   @keyframes advantages-cl1 {
+      0% {
+         width: 80px;
+      }
+
+      100% {
+         width: 40px;
+      }
+   }
+
+   .bg_image :nth-child(2n) {
+      position: relative;
+      top: 20px;
+
+      animation-name: advantages-cl2;
+      animation-duration: 6s;
+      animation-delay: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+   }
+
+   @keyframes advantages-cl2 {
+      0% {
+         width: 80px;
+      }
+
+      100% {
+         width: 40px;
+      }
+   }
+
+   .row {
+      position: relative;
+      z-index: 2;
+
+      .btn {
+         width: 300px;
+         height: 50px;
+         }
+
+      h4 {
+         @extend %h4;
+         color: #c0e9fc;
+         margin-top: 50px
+      }
+
+      h1 {
+         @extend %h1;
+         font-weight: 500;
+      }
+
+      .box {
+         height: 350px;
+         margin: 50px 10px;
+         background-color: white;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-around;
+
+         h3 {
+            @extend %h4;
+            color: black;
+         }
+
+         p {
+            @extend %p;
+         }
+
+         .image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: conic-gradient(#f75e2e 0deg 180deg, #fa9e82 180deg 360deg);
+
+            img {
+               position: relative;
+               top: 37px;
+            }
+
+            .img_3 {
+               position: relative;
+               top: 25px;
+            }
+         }
+      }
+
+   }
+}

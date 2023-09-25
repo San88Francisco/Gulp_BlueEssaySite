@@ -42,6 +42,7 @@
    #counter-container:hover {
       background-color: white;
    }
+
    #counter-container {
       display: flex;
       justify-content: space-between;
@@ -51,25 +52,29 @@
       height: 36px;
       background-color: #f6f9f9 ;
       border-radius: 3px;
-      padding-bottom: 3px;
+      padding-top: 2px;
+      font-family: 'Poppins';
+
+      transition: all .2s linear;
    }
 
+  
    #decrement,
    #increment {
       cursor: pointer;
       font-size: 24px;
-      height: 40px;
+      height: 38px;
       padding: 0px 14px;
-      border: 1px solid #333;
-      border: 0px;
+      border: 1px solid #656a70;
+      border-radius: 2px;
    }
    
    #counter {
       color: #656a70;
-      font-size: 36px;
+      font-size: 26px;
       font-weight: bold;
    }
-
+   
    .btn{
       margin-top: 32px;
       height: 40px;
