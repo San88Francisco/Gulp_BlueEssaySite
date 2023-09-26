@@ -6,7 +6,7 @@
 
    .container {
       position: relative;
-      z-index: 5;
+      z-index: 10;
 
       .row {
 
@@ -33,10 +33,10 @@
       height: 200px;
       position: absolute;
       overflow: hidden;
-      z-index: 2;
+      z-index: 7;
       transition: all .5s linear;
 
-      .box {
+      .class {
          width: 300%;
          margin: 0;
          left: 0;
@@ -71,7 +71,7 @@
          opacity: 90%;
       }
 
-      .box2 {
+      .class2 {
          width: 300%;
          margin: 0;
          left: 0;
@@ -107,9 +107,8 @@
       position: absolute;
       width: 100%;
       height: 550px;
-      border: 1px solid black;
       overflow: hidden;
-      z-index: 6;
+      z-index: 5;
    }
 
    .box {
@@ -137,6 +136,15 @@
       }
    }
 
+   .box2::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+      animation: scatter 1s linear infinite;
+   }
+
    .box2 {
       width: 300%;
       position: relative;
@@ -159,46 +167,38 @@
          }
       }
 
-      img {
-         width: 40px;
+      .fire {         
+         width: 38px;
          position: relative;
-         right: 22px;
-         bottom: 45px;
-         transition: all .3s linear;
-
-         /* Ваш попередній CSS-код для ракети... */
-
-         /* Додайте ефект "згорання" для ракети */
-         .rak {
-            animation: rocketBurn 0.5s alternate infinite;
-         }
-
-         @keyframes rocketBurn {
-            0% {
-               transform: translateY(0) scaleY(1);
-            }
-
-            100% {
-               transform: translateY(-10px) scaleY(0.8);
-            }
-         }
-
+         right: 23px;
+         bottom: 43px;
+         animation: moveFire 0.5s alternate infinite, firePulse 1s alternate infinite;
       }
-
-      /* Додайте псевдоелемент ::before для ефекту "посіпування" */
-      &::before {
-         content: "";
-         position: absolute;
-         width: 10px;
-         height: 10px;
-         background-color: rgba(255, 255, 255, 0.5);
-         animation: scatter 1s linear infinite;
+     
+      
+      
+      @keyframes moveFire {
+         0% {
+            transform: scaleY(1);
+         }
+         100% {
+            transform: scaleY(0.8); 
+         }
+      }
+      
+      @keyframes firePulse {
+         0% {
+            transform: scale(1);
+         }
+         100% {
+            transform: scale(1.2);
+         }
       }
 
       @keyframes scatter {
          0% {
             transform: translate(0, 0) scale(1);
-            opacity: 0.5;
+            opacity: 0.8;
          }
 
          100% {
