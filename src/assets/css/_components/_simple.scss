@@ -1,0 +1,48 @@
+.simple {
+   width: 100%;
+   height: 550px;
+
+   img {
+      height: 250px;
+   }
+
+   .row {
+      h4 {
+         @extend %h4;
+         color: #03a9f4;
+         margin-top: 50px;
+      }
+
+      h1 {
+         @extend %h1;
+         color: black;
+         margin-bottom: 50px;
+      }
+
+      .box {
+         display: flex;
+         flex-direction: row-reverse;
+         color: black;
+
+         .class {
+            padding-right: 20px;
+
+            img {
+               width: 100px;
+               height: 110px;
+            }
+         }
+
+         h2 {
+            margin: 20px 0;
+            @extend %h3;
+            color: black;
+         }
+         p{
+            @extend %p;
+            line-height: 25px;
+         }
+      }
+   }
+
+}

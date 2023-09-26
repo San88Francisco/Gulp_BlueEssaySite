@@ -71,6 +71,7 @@
       position: absolute;
       overflow: hidden;
       top: 120px;
+
       .box {
          width: 200%;
          margin: 0;
@@ -81,9 +82,7 @@
          animation-duration: 30s;
          animation-timing-function: linear;
          animation-iteration-count: infinite;
-         img{
 
-         }
          @keyframes Could {
             0% {
                left: -800px;
