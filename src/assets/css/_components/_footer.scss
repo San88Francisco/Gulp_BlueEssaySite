@@ -1,0 +1,58 @@
+footer {
+   width: 100%;
+   height: 900px;
+   background-color: #03a9f4;
+   // padding: 20px 0;
+   margin-top: 100px;
+
+   .head {
+      width: 1200px;
+      height: 150px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a:hover {
+         color: #d8dadb
+      }
+
+      a {
+         @extend %h4;
+         text-decoration: none;
+         text-transform: uppercase;
+         margin: 0 5px;
+
+         transition: all .3s linear;
+      }
+
+
+   }
+
+   .cl1 {
+      border-bottom: 2px solid #d8dadb;
+      border-top: 2px solid #d8dadb;
+
+      padding: 80px 0;
+
+      .class_text {
+         text-align: left;
+
+         div {
+            padding-left: 55px;
+         }
+
+         h3 {
+            @extend %h3;
+         }
+
+         p {
+            @extend %h5;
+            line-height: 35px;
+            margin-top: 20px;
+
+         }
+      }
+
+   }
+}
