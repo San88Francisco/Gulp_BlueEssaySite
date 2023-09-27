@@ -1,0 +1,226 @@
+.off{
+   width: 800px;
+   height: 500px;
+   
+   margin: 0 auto;
+   position: relative;
+   margin-top: -200px;
+   border-radius: 5px;
+   background-color: white;
+   z-index: 4;
+   text-align: center;
+   box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.75);
+   z-index: 10;
+
+   
+   transition: transform 0.2s;
+
+   .parent {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) 350px;
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+
+      
+      .type {
+         a:hover{
+            background-color: #d8dadb;
+         }
+         a{
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: block;
+
+            transition: all .3s linear;
+         }
+         h1 {
+            padding-top: 20px;
+            @extend %h1;
+            color: #f75e2e;
+         }
+
+         p {
+            @extend %p;
+         }
+
+         h5 {
+            @extend %h5;
+            color: #03a9f4;
+         }
+
+      }
+
+      .div1 {
+         margin: 20px 0 0 20px;
+         border-right: 2px solid #f6f9f9;
+         border-bottom: 2px solid #f6f9f9;
+         grid-area: 1 / 1 / 2 / 2;
+      }
+
+      .div2 {
+         margin: 20px 20px 0 0;
+         border-left: 2px solid #f6f9f9;
+         border-bottom: 2px solid #f6f9f9;
+         grid-area: 1 / 2 / 2 / 3;
+      }
+
+      .div3 {
+         margin: 0 0 20px 20px;
+         border-top: 2px solid #f6f9f9;
+         border-right: 2px solid #f6f9f9;
+         grid-area: 2 / 1 / 3 / 2;
+      }
+
+      .div4 {
+         margin: 0 20px 20px 0;
+         border-top: 2px solid #f6f9f9;
+         border-left: 2px solid #f6f9f9;
+         grid-area: 2 / 2 / 3 / 3;
+      }
+
+   }
+
+   .div5 {
+      grid-area: 1 / 3 / 3 / 4;
+      width: 350px;
+      height: 500px;
+      padding: 15px;
+      background-color: #03a9f4;
+      border-radius: 5px;
+
+
+
+      .box {
+         border: 4px dashed #bcd9e7;
+         height: 100%;
+         border-radius: 30px;
+
+         .noshici {
+            width: 40px;
+            position: relative;
+            bottom: 10px;
+            right: 70px;
+            z-index: 5;
+         }
+
+         .stars {
+            width: 80px;
+            position: relative;
+            top: 30px;
+            left: 80px;
+            z-index: 5;
+         }
+
+         h2 {
+            @extend %h3;
+            padding-top: 30px;
+         }
+
+         .class:hover {
+            background-color: black;
+         }
+
+         .class {
+            width: 270px;
+            height: 200px;
+            border: 3px dashed white;
+            border-radius: 20px;
+            margin: 0 auto;
+            background-color: #0287c3;
+            position: relative;
+            bottom: 60px;
+
+
+            transition: all .3s linear;
+
+            a {
+               width: 100%;
+               height: 100%;
+               display: block;
+               text-decoration: none;
+               border-radius: 10px;
+
+               h5 {
+                  @extend %h3;
+                  font-weight: 400;
+                  position: relative;
+                  right: 55px;
+                  margin-top: 10px
+               }
+
+               h1 {
+                  @extend %h1;
+                  color: #e2f55d;
+                  font-size: 60px;
+                  line-height: 50px;
+               }
+
+               .shake-animation {
+                  @extend %h6;
+                  animation: shake 0.5s ease infinite;
+               }
+
+               @keyframes shake {
+
+                  0%,
+                  100% {
+                     transform: translateY(0);
+                  }
+
+                  25%,
+                  75% {
+                     transform: translateY(-5px);
+                  }
+
+                  50% {
+                     transform: translateY(5px);
+                  }
+
+
+               }
+            }
+         }
+         
+         .Shar {
+            width: 100px;
+            position: relative;
+            left: 150px;
+            bottom: 190px;
+            filter: drop-shadow(0 8mm 0.5rem black);
+            animation: Shar 2s infinite ease-in-out;
+            
+         }
+
+         @keyframes Shar {
+
+            0% {
+               transform: translateY(0);
+            }
+
+            50% {
+               transform: translateY(-5px);
+            }
+         }
+
+         h6 {
+            @extend %h5;
+            position: relative;
+            bottom: 10px;
+
+            span {
+               font-size: 20px;
+               font-weight: 700;
+            }
+
+         }
+      }
+   }
+
+}
+
+.movable-block {
+   position: relative;
+   transition: transform 0.2s; 
+}

@@ -1,0 +1,53 @@
+.testimonials {
+
+   // background-color: black;
+   .row {
+      h4 {
+         @extend %h4;
+         color: #03a9f4;
+         margin-top: 50px;
+      }
+
+      h1 {
+         @extend %h1;
+         color: black;
+         margin-bottom: 50px;
+      }
+   }
+
+   .carousel {
+      text-align: center;
+
+      .radio {
+         margin: 0 auto;
+         width: 120px;
+         height: 120px;
+         border-radius: 50%;
+         background-color: greenyellow;
+      }
+
+      img {
+         width: 100px;
+         height: 120px;
+      }
+
+      p {
+         @extend %p;
+
+         padding: 0 200px;
+      }
+
+      h4 {
+         @extend %h4;
+         color: #03a9f4;
+      }
+
+      .next{
+         background-color: black;
+      }
+
+      .carousel-control-next-icon{
+         color: #03a9f4;
+      }
+   }
+}
