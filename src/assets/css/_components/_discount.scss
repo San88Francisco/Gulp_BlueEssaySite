@@ -11,8 +11,9 @@
       .row {
 
          h5 {
-            @extend %h5;
+            @extend %h4;
             margin-top: 50px;
+            color: #c0e9fc;
          }
 
          h1 {
