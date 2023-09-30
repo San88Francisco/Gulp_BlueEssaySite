@@ -85,30 +85,39 @@ $bg-LOsdsWblue: 100px;
 
 // BUTTON BLUE
 // <button class="btn btn-primary but_blue-big" type="submit">order</button>
-
+.nav-link:active{
+   color: white;
+}
 .but_blue:hover {
    background-color: #c0e9fc;
+   color: white;
 }
 
 .but_blue {
+   color: white;
    border-radius: 8px;
    background-color: #0287c3;
    width: 120px;
    border: 0;
    margin: 0 5px;
+   text-transform: uppercase;
+
 
    transition: all .3s ease-in-out;
 }
 
 .but_blue-big:hover {
    background-color: #c0e9fc;
+   color: white;
 }
 
 .but_blue-big {
+   color: white;
    border-radius: 8px;
    background-color: #0287c3;
    width: 170px;
    border: 0;
+
 
    transition: all .3s ease-in-out;
 }
@@ -116,26 +125,38 @@ $bg-LOsdsWblue: 100px;
 
 
 // BUTTON ORANGE
+
+
 .but_orange:hover {
    background-color: #fa9e82;
+   color: white;
 }
+
 
 .but_orange {
    border-radius: 8px;
    background-color: #f75e2e;
+   color: white;
    width: 120px;
    border: 0;
    margin: 0 5px;
+   text-transform: uppercase;
+
 
    transition: all .3s ease-in-out;
 }
 
 .but_orange-big:hover {
+   color: white;
    background-color: #fa9e82;
 }
 
+.but_blue :active {
+   color: white;
+}
 .but_orange-big {
    border-radius: 8px;
+   color: white;
    background-color: #f75e2e;
    width: 170px;
    border: 0;

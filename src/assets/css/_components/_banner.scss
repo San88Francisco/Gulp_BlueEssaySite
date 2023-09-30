@@ -62,7 +62,7 @@
          position: absolute;
          top: 335px;
          object-fit: cover;
-         filter: drop-shadow(0 -6mm 15mm rgb(0, 123, 210));
+         filter: drop-shadow(0 -9mm 10mm rgb(0, 123, 210));
       }
    }
 
@@ -101,9 +101,21 @@
 
 }
 
-@media (max-width:426px) {
+@media (max-width:768px) {
+   .banner{
+      .Wooman1{
+         display: none;
+      }
+   }
+}
+@media (max-width:461px) {
    .banner {
-
+      .row{
+         text-align: center;
+         h1{
+            font-size: 27px;
+         }
+      }
       .Wooman1 {
          display: none;
       }
