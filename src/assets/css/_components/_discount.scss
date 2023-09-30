@@ -131,6 +131,7 @@
             transform: translate(1400px, -500px);
          }
       }
+
       img {
          width: 120px;
       }
@@ -167,29 +168,31 @@
          }
       }
 
-      .fire {         
+      .fire {
          width: 38px;
          position: relative;
          right: 23px;
          bottom: 43px;
          animation: moveFire 0.5s alternate infinite, firePulse 1s alternate infinite;
       }
-     
-      
-      
+
+
+
       @keyframes moveFire {
          0% {
             transform: scaleY(1);
          }
+
          100% {
-            transform: scaleY(0.8); 
+            transform: scaleY(0.8);
          }
       }
-      
+
       @keyframes firePulse {
          0% {
             transform: scale(1);
          }
+
          100% {
             transform: scale(1.2);
          }
@@ -224,4 +227,36 @@
       }
    }
 
+}
+
+
+@media (max-width:789px) {
+   .discount {
+      position: relative;
+      top: 250px;
+
+      .bg_button {
+         display: none;
+      }
+   }
+}
+
+@media (max-width:426px) {
+   .discount {
+      position: relative;
+      top: 350px;
+
+      .coulds {
+         display: none;
+      }
+
+      .raketa {
+         display: none;
+      }
+
+      .bg_button {
+         display: none;
+      }
+
+   }
 }

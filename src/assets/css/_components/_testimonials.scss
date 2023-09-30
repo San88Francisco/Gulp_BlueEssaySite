@@ -1,6 +1,4 @@
 .testimonials {
-
-   // background-color: black;
    .row {
       h4 {
          @extend %h4;
@@ -17,15 +15,19 @@
 
    .carousel {
       text-align: center;
-
+      padding: 10px;
+      margin-top: 20px;
+      
       .radio {
          margin: 0 auto;
          width: 120px;
          height: 120px;
          border-radius: 50%;
          background-color: greenyellow;
+         margin-bottom: 20px;
+         filter: drop-shadow(0 0.5rem 0.5rem greenyellow);
       }
-
+      
       img {
          width: 100px;
          height: 120px;
@@ -42,12 +44,33 @@
          color: #03a9f4;
       }
 
-      .next{
+      .next {
          background-color: black;
       }
 
-      .carousel-control-next-icon{
+      .carousel-control-next-icon {
          color: #03a9f4;
+      }
+   }
+}
+
+
+@media (max-width:769px) {
+   .testimonials {
+      position: relative;
+      top: 300px;
+   }
+}
+
+@media (max-width:426px) {
+   .testimonials {
+      position: relative;
+      top: 300px;
+
+      .carousel {
+         p {
+            padding: 0 50px;
+         }
       }
    }
 }

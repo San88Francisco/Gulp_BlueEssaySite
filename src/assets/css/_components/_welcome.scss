@@ -5,6 +5,8 @@
       .left {
          background-color: #c0e9fc;
          padding-top: 50px;
+         margin-bottom: 10px;
+         border-radius: 10px;
 
          h2 {
             @extend %h1;
@@ -31,16 +33,30 @@
             @extend %h4;
             color: #03a9f4;
          }
-
+         
          h1 {
             @extend %h1;
             color: black;
+            margin-left: 10px;
          }
-
+         
          p {
             @extend %p;
          }
 
       }
+   }
+}
+
+@media (max-width:426px) {
+   .welcome{
+      .container{
+         padding-left: 5px;
+         padding-right: 30px;
+      }
+      .left {
+         display: none;
+      }
+      
    }
 }

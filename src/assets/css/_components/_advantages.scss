@@ -34,6 +34,9 @@
       animation-timing-function: linear;
       animation-iteration-count: infinite;
       animation-direction: alternate;
+
+      transition: all 3s linear;
+
    }
 
    @keyframes advantages-cl1 {
@@ -56,6 +59,8 @@
       animation-timing-function: linear;
       animation-iteration-count: infinite;
       animation-direction: alternate;
+
+      transition: all 3s linear;
    }
 
    @keyframes advantages-cl2 {
@@ -75,7 +80,7 @@
       .btn {
          width: 300px;
          height: 50px;
-         }
+      }
 
       h4 {
          @extend %h4;
@@ -88,6 +93,9 @@
          font-weight: 500;
       }
 
+      .box:hover .image {
+         transform: scale(1.1);
+      }
       .box {
          height: 350px;
          margin: 50px 10px;
@@ -96,7 +104,9 @@
          flex-direction: column;
          align-items: center;
          justify-content: space-around;
+         border-radius:5px;
 
+         
          h3 {
             @extend %h4;
             color: black;
@@ -105,13 +115,16 @@
          p {
             @extend %p;
          }
-
+         
          .image {
             width: 100px;
             height: 100px;
             border-radius: 50%;
+            filter: drop-shadow(0 0.5rem 0.5rem #f75e2e);
+            
             background: conic-gradient(#f75e2e 0deg 180deg, #fa9e82 180deg 360deg);
-
+            
+            transition: all .2s ease-in;
             img {
                position: relative;
                top: 37px;
@@ -123,6 +136,30 @@
             }
          }
       }
-
    }
+}
+
+@media (max-width:769px) {
+   .advantages {
+      height: 1550px;
+
+      .box {
+         padding: 0 100px;
+      }
+   }
+}
+
+@media (max-width:426px) {
+   .advantages {
+      height: 1600px;
+
+      .bg_image {
+         display: none;
+      }
+
+      .box {
+         padding: 0 20px;
+      }
+   }
+
 }
