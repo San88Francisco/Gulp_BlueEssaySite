@@ -1,6 +1,6 @@
 .off {
    width: 800px;
-   height: 500px;
+   height: 100%;
 
    margin: 0 auto;
    position: relative;
@@ -86,7 +86,7 @@
 
    .div5 {
       grid-area: 1 / 3 / 3 / 4;
-      width: 350px;
+      width: 100%;
       height: 500px;
       padding: 15px;
       background-color: #03a9f4;
@@ -95,6 +95,7 @@
 
 
       .box {
+         width: 100%;
          border: 4px dashed #bcd9e7;
          height: 100%;
          border-radius: 30px;
@@ -125,7 +126,7 @@
          }
 
          .class {
-            width: 270px;
+            width: 80%;
             height: 200px;
             border: 3px dashed white;
             border-radius: 20px;
@@ -227,32 +228,111 @@
    transition: transform 0.2s;
 }
 
-@media (max-width:769px) {
+@media (max-width:868px) {
    .off {
-      width: 600px;
-      position: relative;
-      top: 300px;
+      width: 700px;
    }
 }
 
-@media (max-width:426px) {
+@media (max-width:769px) {
    .off {
-      width: 100%;
-      position: relative;
-      top: 300px;
-      border-radius: 50px;
-      
-      .type {
+      width: 600px;
+
+   }
+}
+
+@media (max-width:676px) {
+   .off {
+      width: 90%;
+
+      .div4,
+      .div3,
+      .div2,
+      .div1 {
          display: none;
       }
-      
+
       .div5 {
-         border-radius: 60px;
+         grid-area: 1 / 1 / 3 / 4;
+         // background-color: #f75e2e;
+
+      }
+   }
+}
+
+@media (max-width:410px) {
+   .off {
+      width: 90%;
+
+      .div4,
+      .div3,
+      .div2,
+      .div1 {
+         display: none;
+      }
+
+      .div5 {
+         width: 100%;
          background-color: #f75e2e;
-         width: 426px;
-         margin-left: -1px;
-         position: relative;
-         right: 75px;
+
+         .box {
+            width: 10 0%;
+
+            .class {
+               width: 80%;
+               background-color: #d8dadb;
+            }
+
+            h6 {
+               font-size: 10px;
+            }
+         }
+
+
+
+         .movable-block {
+            display: none;
+         }
+
+
+      }
+   }
+}
+
+@media (max-width:385px) {
+   .off {
+      width: 300px;
+      position: relative;
+      top: 25px;
+      .div4,
+      .div3,
+      .div2,
+      .div1 {
+         display: none;
+      }
+
+      .div5 {
+         width: 300px;
+
+         .box {
+            width: 10 0%;
+
+            .class {
+               width: 80%;
+            }
+
+            h6 {
+               font-size: 10px;
+            }
+         }
+
+
+
+         .movable-block {
+            display: none;
+         }
+
+
       }
    }
 }

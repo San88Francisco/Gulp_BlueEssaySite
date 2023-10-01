@@ -1,6 +1,6 @@
 .simple {
    width: 100%;
-   height: 550px;
+   height: 100%;
 
    img {
       height: 250px;
@@ -47,6 +47,21 @@
 
 }
 
+@media (max-width:768px) {
+   .simple{
+      .row{
+         h4{
+            font-size: 20px;
+         }
+         h1{
+            font-size: 26px;
+         }
+      }
+      .img_media{
+         display: none;
+      }
+   }
+}
 @media (max-width:426px) {
    .simple{
       .box{

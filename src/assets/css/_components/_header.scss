@@ -101,10 +101,13 @@ header {
 @media (max-width:992px) {
    header {
       ul {
+         max-width: 600px;
+         margin: 0 auto;
          background-color: white;
          text-align: center;
          padding: 10px;
-         border-radius: 10px 10px 100px 100px;
+         border-radius: 5% / 50%;
+
       }
 
       .done_media {

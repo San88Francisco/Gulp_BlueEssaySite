@@ -14,10 +14,12 @@
    }
 
    .carousel {
+      max-width: 950px;
+      margin: 0 auto;
       text-align: center;
       padding: 10px;
       margin-top: 20px;
-      
+
       .radio {
          margin: 0 auto;
          width: 120px;
@@ -27,7 +29,7 @@
          margin-bottom: 20px;
          filter: drop-shadow(0 0.5rem 0.5rem greenyellow);
       }
-      
+
       img {
          width: 100px;
          height: 120px;
@@ -35,8 +37,7 @@
 
       p {
          @extend %p;
-
-         padding: 0 200px;
+         padding: 0 100px
       }
 
       h4 {
@@ -54,19 +55,29 @@
    }
 }
 
-
-@media (max-width:769px) {
+@media (max-width:767.29px) {
    .testimonials {
-      position: relative;
-      top: 300px;
+      .row {
+         h4 {
+            font-size: 20px;
+            color: #03a9f4;
+            margin-top: 50px;
+         }
+
+         h1 {
+            font-size: 22px;
+            color: black;
+            margin-bottom: 50px;
+         }
+      }
    }
+
 }
+
+
 
 @media (max-width:426px) {
    .testimonials {
-      position: relative;
-      top: 300px;
-
       .carousel {
          p {
             padding: 0 50px;

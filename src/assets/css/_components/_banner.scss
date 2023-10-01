@@ -50,7 +50,7 @@
       width: 300px;
       position: absolute;
       object-fit: cover;
-      top: 106px;
+      top: 216px;
    }
 
    .bg-town {
@@ -103,8 +103,18 @@
 
 @media (max-width:768px) {
    .banner{
+      .row{
+         h1{
+            font-size: 24px;
+            span{
+               font-size: 24px;
+               margin-bottom: 20px;
+            }
+         }
+      }
       .Wooman1{
          display: none;
+         
       }
    }
 }
@@ -112,9 +122,7 @@
    .banner {
       .row{
          text-align: center;
-         h1{
-            font-size: 27px;
-         }
+         
       }
       .Wooman1 {
          display: none;
